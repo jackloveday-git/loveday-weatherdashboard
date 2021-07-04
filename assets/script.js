@@ -41,7 +41,7 @@ function citySearch(city) {
 
     //Take user input, fetch from Map Quest API to find Lat/Long & City Name
     //Create mqFetchURL for easy fetch of MQ API!
-    let mqFetchURL = "http://open.mapquestapi.com/geocoding/v1/address?key=" + mqKey + "&location=" + city;
+    let mqFetchURL = "https://open.mapquestapi.com/geocoding/v1/address?key=" + mqKey + "&location=" + city;
     
     //Commence Fetch Req
     fetch(mqFetchURL)
