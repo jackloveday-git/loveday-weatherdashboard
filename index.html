@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+
+  <link rel="stylesheet" href="./assets/style.css" />
+  <title>Weather Dashboard</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
+  </nav>
+  <br>
+
+  <div id="content" class="container">
+
+    <div class="row">
+
+      <!--First Column: Used for search and saving cities-->
+      <div class="col-4">
+        <h3>Search for a City:</h3><br>
+
+        <!--Input Bar & Button from Bootstrap-->
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" id="search-bar" placeholder="San Diego">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" id="search-btn" type="button">Search</button>
+          </div>
+        </div>
+        <hr class="solid">
+
+        <!--Enter Buttons with saved cities here:-->
+
+
+      </div>
+
+      <!--Second Column: Used to break up and hold the City Name & 5-Day forecast-->
+      <div class="col-8">
+        <div id="main-row" class="row">
+          <div class="col border">
+            <!--Layout for City Info Panel-->
+            <div id="city"><h3>City & Date</h3></div>
+            <br>
+            <div id="temp">Temp: </div>
+            <br>
+            <div id="wind">Wind: </div>
+            <br>
+            <div id="humidity">Humidity: </div>
+            <br>
+            <div class="row">
+              <div class="col-auto">UV Index: </div>
+              <div class="col-auto">
+                <div id="uv" class=""></div>
+              </div>
+            </div>
+            <br>
+          </div>
+        </div>
+        <br>
+
+        <div id="5day-row" class="row">
+          <h4>5-Day Forecast:</h4>
+        </div>
+        <br>
+
+        <!--Second row for 5-Day Forecast-->
+        <div id="content-row" class="row flex-nowrap">
+          <div class="col-auto text-white bg-primary">
+            <div id="date1"></div>
+            <br>
+            <div id="img1"></div>
+            <br>
+            <div id="temp1"></div>
+            <br>
+            <div id="wind1"></div>
+            <br>
+            <div id="humidity1"></div>
+          </div>
+
+          <div class="col-1"></div>
+
+          <div class="col-auto text-white bg-primary">
+            <div id="date2"></div>
+            <br>
+            <div id="img2"></div>
+            <br>
+            <div id="temp2"></div>
+            <br>
+            <div id="wind2"></div>
+            <br>
+            <div id="humidity2"></div>
+          </div>
+
+          <div class="col-1"></div>
+
+          <div class="col-auto text-white bg-primary">
+            <div id="date3"></div>
+            <br>
+            <div id="img3"></div>
+            <br>
+            <div id="temp3"></div>
+            <br>
+            <div id="wind3"></div>
+            <br>
+            <div id="humidity3"></div>
+          </div>
+
+          <div class="col-1"></div>
+
+          <div class="col-auto text-white bg-primary">
+            <div id="date4"></div>
+            <br>
+            <div id="img4"></div>
+            <br>
+            <div id="temp4"></div>
+            <br>
+            <div id="wind4"></div>
+            <br>
+            <div id="humidity4"></div>
+          </div>
+
+          <div class="col-1"></div>
+
+          <div class="col-auto text-white bg-primary">
+            <div id="date5"></div>
+            <br>
+            <div id="img5"></div>
+            <br>
+            <div id="temp5"></div>
+            <br>
+            <div id="wind5"></div>
+            <br>
+            <div id="humidity5"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./assets/script.js"></script>
+</body>
+
+</html>
