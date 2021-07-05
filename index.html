@@ -14,17 +14,18 @@
 </head>
 
 <body>
+  <!--Let's add a nav bar for a clean looking header-->
   <nav class="navbar navbar-light bg-light">
     <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
   </nav>
   <br>
 
+  <!--The container which all of our content will be in-->
   <div id="content" class="container">
-
     <div class="row">
 
       <!--First Column: Used for search and saving cities-->
-      <div class="col-4">
+      <div id="history" class="col-4">
         <h3>Search for a City:</h3><br>
 
         <!--Input Bar & Button from Bootstrap-->
@@ -37,6 +38,10 @@
         <hr class="solid">
 
         <!--Enter Buttons with saved cities here:-->
+        <div class="row">
+          <div id="btn-container"></div>
+        </div>
+
 
 
       </div>
@@ -46,7 +51,9 @@
         <div id="main-row" class="row">
           <div class="col border">
             <!--Layout for City Info Panel-->
-            <div id="city"><h3>City & Date</h3></div>
+            <div id="city">
+              <h3>City & Date</h3>
+            </div>
             <br>
             <div id="temp">Temp: </div>
             <br>
@@ -143,7 +150,6 @@
       </div>
     </div>
   </div>
-
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
