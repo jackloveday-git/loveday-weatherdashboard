@@ -141,10 +141,7 @@ function checkLocal() {
     if (local.length > 1) {
         localHolder = JSON.parse(local.getItem('history'));
 
-        //Assign each item of localHolder a btn
-        let btnNum = localHolder.length;
-
-        for (var i = 0; i < btnNum; i++) {
+        for (var i = 0; i < localHolder.length; i++) {
             historyBtn(localHolder[i]);
         }
     } else {    //Otherwise let's make sure its clear!
