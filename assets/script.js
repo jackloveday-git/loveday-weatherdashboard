@@ -9,7 +9,7 @@ let long = "";
 
 //Array to hold button/history in local storage
 let historyArray = [];
-let localHolder = [];
+let holder = [];
 
 //Local Storage:
 let local = window.localStorage;
@@ -136,17 +136,14 @@ function historyBtn(label) {
 
 //A function to check our local storage
 function checkLocal() {
-
     //If our storage isn't empty:
-    if (local.length > 1) {
-        let holder = JSON.parse(local.getItem('history'));
+    if (local.length > 0) {
+        holder = JSON.parse(local.getItem('history'));
 
         for (var i = 0; i < holder.length; i++) {
             historyBtn(holder[i]);
         }
-    } else {    //Otherwise let's make sure its clear!
-        local.clear();
-    }
+    };
 }
 
 //Set Display info
@@ -273,17 +270,17 @@ $("#search-btn").click(() => {
     //Take value from search bar and save as universal
     input = $("#search-bar").val();
     $("#search-bar").val("");
-    // if (input == null) {
-    //     console.log("Invalid Entry.");
-    // } else if (input == "") {
-    //     console.log("Invalid Entry.");
-    // } else if (input == " ") {
-    //     console.log("Invalid Entry.");
-    // } else if (input.length < 3) {
-    //     console.log("Invalid Entry.");
-    //} else {
+    if (input == null) {
+        console.log("Invalid Entry.");
+    } else if (input == "") {
+        console.log("Invalid Entry.");
+    } else if (input == " ") {
+        console.log("Invalid Entry.");
+    } else if (input.length < 3) {
+        console.log("Invalid Entry.");
+    } else {
         //Input the value into citySearch Function
         citySearch(input);
         showAssets();
-    //}
+    }
 });
