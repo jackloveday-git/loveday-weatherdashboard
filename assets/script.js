@@ -139,10 +139,10 @@ function checkLocal() {
 
     //If our storage isn't empty:
     if (local.length > 1) {
-        localHolder = JSON.parse(local.getItem('history'));
+        let holder = JSON.parse(local.getItem('history'));
 
-        for (var i = 0; i < localHolder.length; i++) {
-            historyBtn(localHolder[i]);
+        for (var i = 0; i < holder.length; i++) {
+            historyBtn(holder[i]);
         }
     } else {    //Otherwise let's make sure its clear!
         local.clear();
