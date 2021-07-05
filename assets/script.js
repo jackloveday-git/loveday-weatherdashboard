@@ -273,17 +273,17 @@ $("#search-btn").click(() => {
     //Take value from search bar and save as universal
     input = $("#search-bar").val();
     $("#search-bar").val("");
-    if (input == null) {
-        console.log("Invalid Entry.");
-    } else if (input == "") {
-        console.log("Invalid Entry.");
-    } else if (input == " ") {
-        console.log("Invalid Entry.");
-    } else if (input.length < 3) {
-        console.log("Invalid Entry.");
-    } else {
+    // if (input == null) {
+    //     console.log("Invalid Entry.");
+    // } else if (input == "") {
+    //     console.log("Invalid Entry.");
+    // } else if (input == " ") {
+    //     console.log("Invalid Entry.");
+    // } else if (input.length < 3) {
+    //     console.log("Invalid Entry.");
+    //} else {
         //Input the value into citySearch Function
         citySearch(input);
         showAssets();
-    }
+    //}
 });
