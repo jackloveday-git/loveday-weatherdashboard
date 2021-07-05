@@ -202,7 +202,7 @@ function setDisplay(lat, lon) {
             let d1Wind = "Wind: " + currentWeather.daily[0].wind_speed + " KPH";
             let d1Humiditiy = "Humiditiy: " + currentWeather.daily[0].humidity + " %";
             $("#date1").html(d1Date);
-            $("#img1").html("<img src='http://openweathermap.org/img/wn/" + d1Img + "@2x.png'>");
+            $("#img1").html("<img src='https://openweathermap.org/img/wn/" + d1Img + "@2x.png'>");
             $("#temp1").html(d1Temp);
             $("#wind1").html(d1Wind);
             $("#humidity1").html(d1Humiditiy);
@@ -214,7 +214,7 @@ function setDisplay(lat, lon) {
             let d2Wind = "Wind: " + currentWeather.daily[1].wind_speed + " KPH";
             let d2Humiditiy = "Humiditiy: " + currentWeather.daily[1].humidity + " %";
             $("#date2").html(d2Date);
-            $("#img2").html("<img src='http://openweathermap.org/img/wn/" + d2Img + "@2x.png'>");
+            $("#img2").html("<img src='https://openweathermap.org/img/wn/" + d2Img + "@2x.png'>");
             $("#temp2").html(d2Temp);
             $("#wind2").html(d2Wind);
             $("#humidity2").html(d2Humiditiy);
@@ -226,7 +226,7 @@ function setDisplay(lat, lon) {
             let d3Wind = "Wind: " + currentWeather.daily[2].wind_speed + " KPH";
             let d3Humiditiy = "Humiditiy: " + currentWeather.daily[2].humidity + " %";
             $("#date3").html(d3Date);
-            $("#img3").html("<img src='http://openweathermap.org/img/wn/" + d3Img + "@2x.png'>");
+            $("#img3").html("<img src='https://openweathermap.org/img/wn/" + d3Img + "@2x.png'>");
             $("#temp3").html(d3Temp);
             $("#wind3").html(d3Wind);
             $("#humidity3").html(d3Humiditiy);
@@ -238,7 +238,7 @@ function setDisplay(lat, lon) {
             let d4Wind = "Wind: " + currentWeather.daily[3].wind_speed + " KPH";
             let d4Humiditiy = "Humiditiy: " + currentWeather.daily[3].humidity + " %";
             $("#date4").html(d4Date);
-            $("#img4").html("<img src='http://openweathermap.org/img/wn/" + d4Img + "@2x.png'>");
+            $("#img4").html("<img src='https://openweathermap.org/img/wn/" + d4Img + "@2x.png'>");
             $("#temp4").html(d4Temp);
             $("#wind4").html(d4Wind);
             $("#humidity4").html(d4Humiditiy);
@@ -250,7 +250,7 @@ function setDisplay(lat, lon) {
             let d5Wind = "Wind: " + currentWeather.daily[4].wind_speed + " KPH";
             let d5Humiditiy = "Humiditiy: " + currentWeather.daily[4].humidity + " %";
             $("#date5").html(d5Date);
-            $("#img5").html("<img src='http://openweathermap.org/img/wn/" + d5Img + "@2x.png'>");
+            $("#img5").html("<img src='https://openweathermap.org/img/wn/" + d5Img + "@2x.png'>");
             $("#temp5").html(d5Temp);
             $("#wind5").html(d5Wind);
             $("#humidity5").html(d5Humiditiy);
